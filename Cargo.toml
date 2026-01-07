@@ -1,0 +1,12 @@
+[package]
+name = "parquet-viewer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = "0.29"
+egui_extras = { version = "0.29", features = ["all_loaders"] }
+polars = { version = "0.45", features = ["parquet", "lazy", "dtype-datetime", "dtype-struct"] }
+rfd = "0.15"
+anyhow = "1.0"
+geozero = { version = "0.15.1", features = ["with-wkb"] }
