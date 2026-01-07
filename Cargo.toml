@@ -10,3 +10,15 @@ polars = { version = "0.45", features = ["parquet", "lazy", "dtype-datetime", "d
 rfd = "0.15"
 anyhow = "1.0"
 geozero = { version = "0.15.1", features = ["with-wkb"] }
+
+[package.metadata.bundle]
+name = "Parquet Viewer"
+identifier = "com.chikina.parquet-viewer"
+icon = []
+copyright = "Copyright © 2026 Chikina. All rights reserved."
+category = "Productivity"
+short_description = "シンプルなParquetファイルビューアーです。"
+long_description = """
+Parquetファイルを閲覧するためのネイティブmacOSアプリケーションです。
+Rust、eframe、Polarsを使用して構築されています。
+"""
